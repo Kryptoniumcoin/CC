@@ -5,6 +5,7 @@ import Testimonials from './components/Testimonials';
 import FAQSection from './components/FAQSection';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
+import OfferBanner from './components/OfferBanner';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -91,8 +92,10 @@ function App() {
         )}
       </header>
 
+      <OfferBanner />
+
       {/* Hero Section */}
-      <section className="relative h-[600px] mt-16">
+      <section className="relative h-[600px] mt-16 overflow-x-hidden">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80"
@@ -103,12 +106,53 @@ function App() {
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Get the Best Car Insurance Rates in the USA</h1>
-            <p className="text-lg md:text-xl mb-8">Don't overpay for car insurance. Compare and save with CompareOnCall.</p>
-            <a href="tel:+1-8334615733" className="bg-green-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-lg font-semibold hover:bg-green-400 transition inline-flex items-center space-x-2">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">Don't Overpay for Car Insurance: Get Your Free, No-Obligation Quote Now!</h1>
+            <p className="text-base md:text-xl mb-6">Compare Rates from 50+ Top Insurers & Save Up to $1,200 a Year!</p>
+            <a href="tel:+1-8334615733" className="bg-green-500 text-white px-4 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-green-400 transition inline-flex items-center space-x-2">
               <Phone className="w-5 h-5" />
               <span>Call Now: +1-833-461-5733</span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Frustration Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-green-800 mb-8">Tired of the Car Insurance Runaround?</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <DollarSign className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-lg">Paying More Than You Should?</h3>
+                  <p className="text-gray-600">Feeling like you're throwing money away on overpriced insurance?</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <FileCheck className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-lg">Decoding Confusing Policies?</h3>
+                  <p className="text-gray-600">Struggling to understand what you're actually covered for?</p>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <Clock className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-lg">Spending Hours Comparing?</h3>
+                  <p className="text-gray-600">Wasting precious time searching for the best deal?</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Users className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-lg">Dealing with Pushy Salespeople?</h3>
+                  <p className="text-gray-600">Feeling pressured into buying coverage you don't need?</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -281,36 +325,31 @@ function App() {
       </section>
 
       {/* Why Choose Us */}
-      <section id="why-us" className="py-20 bg-gray-50">
+      <section id="why-us" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-green-800">Why Choose CompareOnCall</h2>
-          <div className="grid md:grid-cols-4 gap-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-green-800 mb-8">The Smarter Way to Shop for Car Insurance</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                icon: <Award className="w-10 h-10 text-green-600" />,
-                title: "Best Rates Guaranteed",
-                description: "We compare rates from multiple carriers to ensure you get the best deal."
+                icon: <Shield className="w-10 h-10 text-green-600" />,
+                title: "Unbiased Comparisons",
+                description: "We don't favor any particular insurance company. Our goal is to help you find the best deal."
               },
               {
-                icon: <Heart className="w-10 h-10 text-green-600" />,
-                title: "Customer First",
-                description: "Our team is dedicated to providing exceptional customer service."
+                icon: <Award className="w-10 h-10 text-green-600" />,
+                title: "Expert Advice",
+                description: "Our licensed insurance agents provide personalized guidance every step of the way."
               },
               {
                 icon: <CheckCircle2 className="w-10 h-10 text-green-600" />,
-                title: "Licensed Experts",
-                description: "Our agents are licensed professionals with years of experience."
-              },
-              {
-                icon: <Car className="w-10 h-10 text-green-600" />,
-                title: "Multiple Coverage Options",
-                description: "Find the perfect coverage that fits your needs and budget."
+                title: "Fast & Free Service",
+                description: "Quick and easy process with no hidden fees or obligations."
               }
             ].map((item, index) => (
-              <div key={index} className="text-center bg-white p-6 rounded-lg shadow-sm">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <h3 className="text-lg font-semibold text-center mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-center">{item.description}</p>
               </div>
             ))}
           </div>
