@@ -79,7 +79,7 @@ function App() {
         </div>
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-green-800 py-4 px-4 shadow-lg">
+          <div className="md:hidden fixed top-[72px] left-0 right-0 bg-green-800 py-4 px-4 shadow-lg z-50">
             <div className="flex flex-col space-y-4">
               <a href="#why-us" className="hover:text-green-200" onClick={() => setMobileMenuOpen(false)}>Why Choose Us</a>
               <a href="#about" className="hover:text-green-200" onClick={() => setMobileMenuOpen(false)}>About Us</a>
@@ -92,10 +92,13 @@ function App() {
         )}
       </header>
 
-      <OfferBanner />
+      {/* Banner - Add sticky positioning */}
+      <div className="sticky top-[72px] z-40"> {/* 72px matches header height (16px padding top/bottom + content) */}
+        <OfferBanner />
+      </div>
 
-      {/* Hero Section */}
-      <section className="relative h-[600px] mt-16 overflow-x-hidden">
+      {/* Hero Section - Remove mt-16 and add pt-[72px] */}
+      <section className="relative h-[600px] pt-[72px] overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80"
@@ -104,7 +107,7 @@ function App() {
           />
           <div className="absolute inset-0 bg-green-900/70"></div>
         </div>
-        <div className="relative container mx-auto px-4 h-full flex items-center">
+        <div className="relative container mx-auto px-4 max-w-[100vw] overflow-x-hidden h-full flex items-center">
           <div className="max-w-2xl text-white">
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">Don't Overpay for Car Insurance: Get Your Free, No-Obligation Quote Now!</h1>
             <p className="text-base md:text-xl mb-6">Compare Rates from 50+ Top Insurers & Save Up to $1,200 a Year!</p>
@@ -277,10 +280,10 @@ function App() {
       </section>
 
       {/* One Call Solution Section */}
-      <section className="py-16 bg-green-800 text-white">
+      <section className="py-16 bg-green-800 text-white overflow-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Get Insured in One Simple Call</h2>
-          <div className="grid md:grid-cols-4 gap-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Get Insured in One Simple Call</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-6">
             {[
               {
                 step: "1",
