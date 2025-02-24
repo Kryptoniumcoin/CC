@@ -2,7 +2,7 @@
 
 <section class="relative h-[600px] mt-16">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=880&h=660" alt="Luxury car" class="w-full h-full object-cover">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/luxury-car.jpg" alt="Luxury car" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-green-900/70"></div>
     </div>
     <div class="relative container mx-auto px-4 h-full flex items-center">
