@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-5px); }
@@ -17,21 +16,3 @@
 .animate-fade-in {
   animation: fade-in 0.3s ease-out forwards;
 }
-=======
-/* Add these styles */
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-/* Optional: Add if you want to maintain smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Ensure all sections respect viewport width */
-section {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
->>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2

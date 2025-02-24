@@ -1,9 +1,24 @@
 # Dependencies
+<<<<<<< HEAD
+=======
+/node_modules
+/.pnp
+.pnp.js
+>>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
 node_modules
 dist
 dist-ssr
 *.local
 
+<<<<<<< HEAD
+=======
+# Testing
+/coverage
+
+# Production
+/build
+
+>>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
 # Logs
 logs
 *.log
@@ -24,8 +39,12 @@ lerna-debug.log*
 *.sln
 *.sw?
 
+<<<<<<< HEAD
 # Environment variables
 .env
+=======
+# Misc
+>>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
 .env.local
 .env.development.local
 .env.test.local
