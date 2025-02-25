@@ -137,7 +137,7 @@ function App() {
             alt="Luxury car"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-green-900/70"></div>
+          <div className="absolute inset-0 bg-green-900/80"></div>
         </div>
         <div className="relative container mx-auto px-4 max-w-[100vw] overflow-x-hidden h-full flex items-center">
           <div className="max-w-2xl text-white">
