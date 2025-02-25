@@ -59,4 +59,8 @@
     </div>
 </footer>
 
+<<<<<<< HEAD
 <?php wp_footer(); ?>
+=======
+<?php wp_footer(); ?>
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea

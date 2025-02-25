@@ -1064,4 +1064,8 @@ video {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea

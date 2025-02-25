@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 /node_modules
 /.pnp
@@ -12,6 +13,8 @@ dist-ssr
 # Production
 /build
 
+=======
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
 # Logs
 logs
 *.log
@@ -21,6 +24,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+<<<<<<< HEAD
+=======
+node_modules
+dist
+dist-ssr
+*.local
+
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -31,6 +42,7 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 
 # Environment variables
 .env
@@ -38,3 +50,5 @@ lerna-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
+=======
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea

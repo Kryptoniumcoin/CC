@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { X, Phone, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import Timer from './Timer';
@@ -6,6 +7,11 @@ import Timer from './Timer';
 import React, { useState, useEffect } from 'react';
 import { X, AlertTriangle, Phone, Clock } from 'lucide-react';
 >>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
+=======
+import React from 'react';
+import { X, Phone, AlertTriangle, CheckCircle2 } from 'lucide-react';
+import Timer from './Timer';
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
 
 interface PopupOfferProps {
   onClose: () => void;
@@ -13,6 +19,9 @@ interface PopupOfferProps {
 
 const PopupOffer: React.FC<PopupOfferProps> = ({ onClose }) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8">
       <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose}></div>
@@ -59,6 +68,7 @@ const PopupOffer: React.FC<PopupOfferProps> = ({ onClose }) => {
                 <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" />
                 <p className="text-sm"><span className="font-bold">Free</span> roadside assistance included</p>
               </div>
+<<<<<<< HEAD
 =======
   const [timeLeft, setTimeLeft] = useState(600); // 10 minutes in seconds
 
@@ -107,6 +117,8 @@ const PopupOffer: React.FC<PopupOfferProps> = ({ onClose }) => {
               <p className="text-green-600 font-semibold">✓ Save up to 50% on Premium</p>
               <p className="text-green-600 font-semibold">✓ Additional $50/Month Savings</p>
 >>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
+=======
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
             </div>
           </div>
 
@@ -114,10 +126,14 @@ const PopupOffer: React.FC<PopupOfferProps> = ({ onClose }) => {
             <a
               href="tel:+1-8334615733"
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="block w-full bg-black text-yellow-400 py-4 rounded-full text-center font-bold text-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-105 animate-pulse"
 =======
               className="block w-full bg-black text-yellow-400 py-4 rounded-full text-center font-bold text-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-105 animate-[shake_0.5s_ease-in-out_infinite]"
 >>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
+=======
+              className="block w-full bg-black text-yellow-400 py-4 rounded-full text-center font-bold text-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-105 animate-pulse"
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
             >
               <div className="flex items-center justify-center space-x-2">
                 <Phone className="w-5 h-5" />
@@ -125,6 +141,7 @@ const PopupOffer: React.FC<PopupOfferProps> = ({ onClose }) => {
               </div>
             </a>
             
+<<<<<<< HEAD
 <<<<<<< HEAD
             <div className="text-center text-sm text-gray-600">
               <p>⭐⭐⭐⭐⭐</p>
@@ -134,6 +151,11 @@ const PopupOffer: React.FC<PopupOfferProps> = ({ onClose }) => {
               <p className="text-yellow-500 text-2xl">⭐⭐⭐⭐⭐</p>
               <p className="text-gray-600 italic">"I saved $847 on my premium!" - Sarah M.</p>
 >>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
+=======
+            <div className="text-center text-sm text-gray-600">
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>"Saved $847 on my premium!" - Sarah M.</p>
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
             </div>
           </div>
         </div>
@@ -143,7 +165,11 @@ const PopupOffer: React.FC<PopupOfferProps> = ({ onClose }) => {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default PopupOffer;
 =======
 export default PopupOffer; 
 >>>>>>> 02c9105dd20e7133ffbf05683e0624b5ccfa0be2
+=======
+export default PopupOffer;
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea

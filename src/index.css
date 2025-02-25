@@ -16,6 +16,7 @@
 .animate-fade-in {
   animation: fade-in 0.3s ease-out forwards;
 }
+<<<<<<< HEAD
 
 /* Base styles */
 html, body {
@@ -40,3 +41,5 @@ section {
 .transition-all {
   transition: all 0.3s ease;
 }
+=======
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea

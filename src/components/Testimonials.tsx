@@ -117,18 +117,47 @@ const Testimonials = () => {
                           ))}
                         </div>
                       </div>
+<<<<<<< HEAD
                     </div>
                     <p className="text-gray-600 mb-4">{testimonial.text}</p>
                     <div className="text-green-600 font-semibold">Saved: {testimonial.saved}</div>
+=======
+                      <div className="md:ml-auto">
+                        <div className="bg-green-50 text-green-800 px-4 py-2 rounded-full font-semibold">
+                          Saved {testimonial.saved}
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-gray-600 italic text-lg leading-relaxed">"{testimonial.text}"</p>
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
                   </div>
                 </div>
               ))}
             </div>
           </div>
+<<<<<<< HEAD
+=======
+          
+          <div className="flex justify-center mt-6 space-x-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full transition-colors duration-200 ${
+                  currentIndex === index ? 'bg-green-600' : 'bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
         </div>
       </div>
     </section>
   );
 };
 
+<<<<<<< HEAD
 export default Testimonials;
+=======
+export default Testimonials;
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CompareOnCall
 
 A modern web application for comparing car insurance rates in the USA. Built with React and TypeScript.
@@ -19,3 +20,6 @@ Email: info@compareoncall.com
 ## License
 
 All rights reserved © 2024 CompareOnCall 
+=======
+# CC
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea

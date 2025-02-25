@@ -2,7 +2,11 @@
 
 <section class="relative h-[600px] mt-16">
     <div class="absolute inset-0">
+<<<<<<< HEAD
         <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80" alt="Luxury car" class="w-full h-full object-cover">
+=======
+        <img src="<?php echo get_template_directory_uri(); ?>/luxury-car.jpg" alt="Luxury car" class="w-full h-full object-cover">
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
         <div class="absolute inset-0 bg-green-900/70"></div>
     </div>
     <div class="relative container mx-auto px-4 h-full flex items-center">
@@ -25,4 +29,8 @@
 <?php get_template_part('template-parts/faq'); ?>
 <?php get_template_part('template-parts/about'); ?>
 
+<<<<<<< HEAD
 <?php get_footer(); ?>
+=======
+<?php get_footer(); ?>
+>>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
