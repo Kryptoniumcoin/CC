@@ -2,7 +2,7 @@
 
 <section class="relative h-[600px] mt-16">
     <div class="absolute inset-0">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/luxury-car.jpg" alt="Luxury car" class="w-full h-full object-cover">
+        <img src="<?php echo get_template_directory_uri(); ?>/luxury-car.jpg" alt="Luxury car" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-green-900/70"></div>
     </div>
     <div class="relative container mx-auto px-4 h-full flex items-center">
