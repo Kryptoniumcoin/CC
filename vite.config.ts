@@ -1,19 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-<<<<<<< HEAD
-=======
 import path from 'path';
 
 const projectRootDir = path.resolve(__dirname);
->>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-<<<<<<< HEAD
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-=======
   server: {
     proxy: {
       '/wp-content': {
@@ -44,6 +37,5 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
->>>>>>> b8b85e1d3856037ef5b9c3c4f9257b552f934dea
   },
 });
